@@ -1,0 +1,11 @@
+{
+  "routes": [
+    {"path":"/","title":"Dashboard"},
+    {"path":"/app/:slug","title":"Application"},
+    {"path":"/game/:slug","title":"Game"},
+    {"path":"/settings","title":"Settings"},
+    {"path":"/membership","title":"ReKindle+"},
+    {"path":"/help","title":"Help"},
+    {"path":"/preview.html?app=chat","title":"AI Assistant"}
+  ]
+}
