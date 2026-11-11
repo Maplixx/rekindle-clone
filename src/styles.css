@@ -80,6 +80,9 @@ h1, h2, h3, p { text-wrap: pretty; }
 .app-tile:hover { background: #fff; border-color: #000; box-shadow: 1px 1px 0 #000; }
 .tile-icon { width: 42px; height: 40px; display: grid; place-items: center; }
 .glyph { white-space: pre-line; display: inline-grid; place-items: center; min-width: 31px; min-height: 31px; font-size: 20px; line-height: .78; letter-spacing: -1px; }
+.svg-glyph { width: 32px; height: 32px; }
+.svg-glyph svg { display: block; width: 32px; height: 32px; overflow: visible; }
+.glyph-large.svg-glyph, .glyph-large.svg-glyph svg { width: 68px; height: 68px; }
 .glyph-multiline { font-size: 10px; line-height: .9; letter-spacing: 0; }
 .glyph-large { min-width: 68px; min-height: 68px; font-size: 43px; border: 2px solid #000; }
 .tile-name { max-width: 100%; min-height: 26px; font-size: 11px; line-height: 1.05; overflow-wrap: anywhere; }

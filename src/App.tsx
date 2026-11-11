@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import type { PointerEvent as ReactPointerEvent } from 'react'
 import { allItems, appBySlug, apps, gameBySlug, games, statusLabel, type CatalogItem } from './catalog'
+import { originalIcons } from './iconData'
 
 type ModalName = 'login' | 'membership' | 'help' | 'settings' | null
 type TabName = 'all' | 'dashboard' | 'essentials' | 'tools' | 'lifestyle' | 'games' | 'two_player'
@@ -27,6 +28,10 @@ const useLocation = () => {
 
 const Glyph = ({ item, large = false }: { item?: CatalogItem; large?: boolean }) => {
   const slug = item?.slug || ''
+  const originalSvg = originalIcons[slug]
+  if (originalSvg) {
+    return <span aria-hidden="true" className={`glyph svg-glyph ${large ? 'glyph-large' : ''}`} dangerouslySetInnerHTML={{ __html: originalSvg }} />
+  }
   const special: Record<string, string> = {
     calendar: '11', countdown: '00', dictionary: 'Az', translate: '文', wikipedia: 'W', sudoku: '9', blackjack: 'A♠J',
     bindings: 'C', folder_pool: '8B', folder_connect4: '4', folder_checkers: 'C', folder_chess: '♜', search: 'S E\nA R C H', notes: '▤',
