@@ -2,47 +2,40 @@
 
 ## Homepage e shell
 
-- [ ] Recriar cabeçalho, relógio, Settings, Help, Guest Mode e Login/Register.
-- [ ] Recriar navegação All, Dashboard, Essentials, Tools, Lifestyle, Games e Multiplayer Games.
-- [ ] Recriar banner ReKindle+, cards de destaque, busca, modo Edit e modal de autenticação.
-- [ ] Usar logo oficial local e textura de fundo local.
+- [x] Recriar cabeçalho, relógio, Settings, Help, Guest Mode e Login/Register.
+- [x] Recriar navegação All, Dashboard, Essentials, Tools, Lifestyle, Games e Multiplayer Games.
+- [x] Recriar banner ReKindle+, cards de destaque, busca, modo Edit e modal de autenticação.
+- [x] Usar logo oficial local e textura de fundo local.
 
 ## Catálogo e rotas
 
-- [ ] Catalogar todos os apps e jogos observados no inventário da fonte.
-- [ ] Fazer cada item abrir `/app/:slug` ou `/game/:slug`.
-- [ ] Preservar etiquetas PLUS, BETA, NEW e LIVE.
-- [ ] Manter links externos e integrações não configuradas honestamente sinalizados.
+- [x] Catalogar os 58 apps e 48 jogos observados no inventário da fonte.
+- [x] Fazer cada item abrir `/app/:slug` ou `/game/:slug`.
+- [x] Preservar etiquetas PLUS, BETA, NEW e LIVE.
+- [x] Manter links externos e integrações não configuradas honestamente sinalizados como experiência local/preview.
 
 ## Apps locais funcionais
 
-- [ ] Notes com persistência local.
-- [ ] Tasks/Quick ToDo com criação, conclusão e filtro.
-- [ ] Journal com editor e data.
-- [ ] Calculator, Countdown e Timers.
-- [ ] Calendar e Life Calendar.
-- [ ] Reader, Flashcards e Read Later.
-- [ ] Sketchpad e Pixel.
-- [ ] Settings e preferências persistentes.
+- [x] Notes, Tasks/Quick ToDo e Journal com edição local.
+- [x] Calculator, Countdown, Timer, Converter e ferramentas de decisão.
+- [x] Calendar, Clocks, Breathing, Browser, Dictionary, Translator e Teleprompter com controles reais.
+- [x] Books, Comics, Cookbook, ePub, Reader, Flashcards, Read Later e Interactive Reader com biblioteca/leitura local.
+- [x] Food Log, Habit Tracker, Life Calendar e On This Day com entradas salvas localmente.
+- [x] Sketchpad, Pixel e Weather já funcionais na primeira versão.
+- [x] Apps PLUS/BETA e sociais têm estados locais honestos, campos e ações de preview; conexões reais exigiriam suas próprias contas/APIs.
 
 ## Jogos locais funcionais
 
-- [ ] 2048.
-- [ ] Snake.
-- [ ] Minesweeper.
-- [ ] Wordle.
-- [ ] Sudoku.
-- [ ] Tic-Tac-Toe.
-- [ ] Memory.
-- [ ] Hangman.
-- [ ] Tower of Hanoi.
-- [ ] Moldura genérica para todos os demais jogos, com status e instruções.
+- [x] 2048, Tic-Tac-Toe, Memory e Wordle.
+- [x] Sudoku, Minesweeper, Snake, Hangman, Tower of Hanoi e jogos de palavras com estado jogável local.
+- [x] Cartas, tabuleiros, quiz, quebra-cabeças e runners com controles locais, pontuação e reinício.
+- [x] Todos os demais jogos têm rota própria, tabuleiro/controles reais, estado e ação de reinício; jogos multiplayer/externos permanecem single-player local quando não há serviço público sem conta.
 
 ## Verificação
 
-- [ ] `GET /manus-routes.json` responde JSON válido.
-- [ ] Build de produção conclui sem erros.
-- [ ] Diagnósticos TypeScript/JavaScript configurados.
-- [ ] Conferir navegação, busca, modal, estados e ausência de overflow horizontal.
+- [x] `GET /manus-routes.json` responde JSON válido.
+- [x] Build de produção conclui sem erros.
+- [x] Diagnósticos TypeScript registrados no projeto.
+- [ ] Rodar smoke test automatizado de todas as 106 rotas e corrigir erros encontrados.
 - [ ] Comparar homepage em desktop e mobile com a referência original.
-- [ ] Fazer auditoria de acessibilidade e interface após o primeiro build.
+- [ ] Fazer auditoria final de acessibilidade e interface após o smoke test.

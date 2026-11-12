@@ -191,3 +191,23 @@ h1, h2, h3, p { text-wrap: pretty; }
 @media (max-width: 900px) { .app-grid { grid-template-columns: repeat(6, minmax(70px, 1fr)); } .feature-grid { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 660px) { .topbar { height: auto; min-height: 40px; flex-wrap: wrap; gap: 6px 11px; padding: 4px 8px; }.topbar-right { width: 100%; margin-left: 0; justify-content: space-between; border-top: 1px dotted #777; padding-top: 3px; }.home-panel { width: calc(100% - 14px); margin: 14px auto 28px; padding: 0 8px 20px; }.category-nav { overflow-x: auto; margin-left: -2px; margin-right: -2px; padding-bottom: 1px; }.category-nav button { padding: 5px 10px; }.plus-banner { grid-template-columns: 1fr 25px; gap: 4px 8px; }.plus-banner > div { grid-column: 1 / -1; }.plus-banner > button:not(.banner-close) { font-size: 11px; }.plus-banner .see-plans { grid-column: 1; text-align: left; }.plus-banner .banner-close { grid-column: 2; grid-row: 2; }.feature-grid { grid-template-columns: 1fr; gap: 6px; }.feature-card { min-height: 59px; }.catalog-heading { align-items: start; flex-direction: column; gap: 9px; }.catalog-tools { width: 100%; }.catalog-tools input { flex: 1; width: auto; }.app-grid { grid-template-columns: repeat(4, minmax(60px, 1fr)); gap: 5px; }.app-tile { min-height: 85px; }.tile-icon { transform: scale(.9); }.tile-name { font-size: 10px; }.window-page { width: calc(100% - 18px); margin: 22px auto; }.mini-window-body { padding: 15px 11px; }.generic-hero { gap: 12px; padding: 13px; }.glyph-large { min-width: 53px; min-height: 53px; font-size: 32px; }.generic-hero h2, .game-intro h2 { font-size: 22px; }.weather-days { gap: 2px; }.weather-days div { padding: 8px 4px; }.pixel-grid { grid-template-columns: repeat(8, 26px); gap: 1px; }.pixel-grid button { width: 26px; height: 26px; }.reader-app { font-size: 17px; }.reader-app h2 { font-size: 25px; }.modal-card { padding: 30px 18px 19px; } }
 @media (max-width: 380px) { .app-grid { grid-template-columns: repeat(3, minmax(60px, 1fr)); }.brand img { width: 86px; }.login-link { font-size: 11px; }.word-row { grid-template-columns: repeat(5, 40px); }.word-row span { width: 40px; height: 40px; } }
+
+/* Local implementations for every catalog route */
+.tool-app h3 { margin: 0 0 12px; font-size: 18px; }
+.tool-app textarea, .tool-app input, .tool-app select { max-width: 100%; box-sizing: border-box; border: 1px solid #000; background: #fff; padding: 8px; font: inherit; }
+.tool-app textarea { min-height: 110px; width: 100%; resize: vertical; }
+.tool-app select { margin: 8px 0; }
+.translation-result, .teleprompter-copy { border: 1px solid #000; background: #fff; min-height: 46px; padding: 12px; margin-top: 12px; }
+.teleprompter-copy { font-size: 24px; line-height: 1.35; max-height: 180px; overflow: auto; }
+.reader-list { display: grid; gap: 6px; margin: 12px 0; }
+.reader-list button { display: flex; justify-content: space-between; text-align: left; }
+.reader-list small { color: #555; }
+.game-local { min-width: min(100%, 440px); }
+.mini-board { display: grid; gap: 4px; border: 2px solid #000; padding: 5px; background: #fff; max-width: 330px; }
+.nine-board { grid-template-columns: repeat(3, 1fr); }
+.nine-board button { aspect-ratio: 1; min-height: 58px; font-size: 18px; }
+.nine-board button.on, .target-grid button:active { background: #000; color: #fff; }
+.target-grid { display: grid; grid-template-columns: repeat(4, minmax(48px, 1fr)); gap: 6px; max-width: 340px; margin: 12px 0; }
+.target-grid button { aspect-ratio: 1; }
+.game-choice-row { display: flex; gap: 8px; margin: 16px 0; }
+@media (max-width: 640px) { .tool-app { width: 100%; } .target-grid { grid-template-columns: repeat(3, 1fr); } }
